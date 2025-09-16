@@ -22,6 +22,9 @@
 
 
 
+
+
+
 // let arr = [1, 2, 3, 4, 5]; 
 // let reversed = [];           
 
@@ -32,6 +35,8 @@
 // console.log("Original:", arr);
 // console.log("Reversed:", reversed
 // );
+
+
 
 
 
@@ -47,15 +52,34 @@
 //     console.log("it is not a palidrome")
 // }
 
-let arr=[1,2,3,4,5]
-function reverseArray(arr) {
-  let reversed = [];
-  for (let i = arr.length - 1; i >= 0; i--) {
-    reversed.push(arr[i]);
-  }
-  return reversed;
+
+
+
+
+// let arr=[1,2,3,4,5]
+// function reverseArray(arr) {
+//   let reversed = [];
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     reversed.push(arr[i]);
+//   }
+//   return reversed;
+// }
+
+// // Example:
+// console.log(reverseArray(arr));
+
+
+
+
+let arr=[10,20,30,40,50]
+function sumArray(arr){
+
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+
+        sum=sum+arr[i];
+    }
+    return sum;
 }
 
-// Example:
-console.log(reverseArray(arr));
-
+console.log(sumArray(arr));
