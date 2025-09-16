@@ -22,13 +22,40 @@
 
 
 
-let arr = [1, 2, 3, 4, 5]; 
-let reversed = [];           
+// let arr = [1, 2, 3, 4, 5]; 
+// let reversed = [];           
 
-for (let i = arr.length - 1; i >= 0; i--) {
-  reversed.push(arr[i]);    
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   reversed.push(arr[i]);    
+// }
+
+// console.log("Original:", arr);
+// console.log("Reversed:", reversed
+// );
+
+
+
+// let str="split"
+// let rev=str.split("").reverse().join("")
+// if(str==rev)
+// {
+//     console.log("it is palidrome");
+    
+// }
+// else{
+
+//     console.log("it is not a palidrome")
+// }
+
+let arr=[1,2,3,4,5]
+function reverseArray(arr) {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
 }
 
-console.log("Original:", arr);
-console.log("Reversed:", reversed);
+// Example:
+console.log(reverseArray(arr));
 
