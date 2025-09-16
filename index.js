@@ -88,21 +88,39 @@
 
 
 
-let str="i am anjana"
+// let str="i am anjana"
 
-function largestWord(sentence)
-{
+// function largestWord(sentence)
+// {
 
-    let longest="";
-    let words=sentence.split(" ");
-    for(let i=0;i<words.length;i++)
+//     let longest="";
+//     let words=sentence.split(" ");
+//     for(let i=0;i<words.length;i++)
+//     {
+//         if (words[i].length > longest.length) {
+//       longest = words[i]; 
+//     }
+
+// }
+// return longest;
+// }
+
+// console.log(largestWord(str));
+
+
+
+let arr=[2,4,6,,69,94,5]
+function maxInArray(){
+
+    if(arr.length===0) return null;
+    let max = arr[0];
+    for(let i=1;i<arr.length;i++)
     {
-        if (words[i].length > longest.length) {
-      longest = words[i]; 
+        if (arr[i]>max){
+
+            max=arr[i];
+        }
     }
-
+ return max;
 }
-return longest;
-}
-
-console.log(largestWord(str));
+console.log(maxInArray(arr));
