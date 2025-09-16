@@ -124,3 +124,24 @@ function maxInArray(){
  return max;
 }
 console.log(maxInArray(arr));
+
+
+
+
+
+
+function countVowels(str) {
+  let s = str.toLowerCase();
+  let vowels = "aeiou";
+  let count = 0;
+  for (let i = 0; i < s.length; i++) 
+    {
+      if (vowels.includes(s[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+
+console.log(countVowels("Hello guys welcome to my channel")); 
