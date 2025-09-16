@@ -71,15 +71,38 @@
 
 
 
-let arr=[10,20,30,40,50]
-function sumArray(arr){
 
-    let sum=0;
-    for(let i=0;i<arr.length;i++){
+// let arr=[10,20,30,40,50]
+// function sumArray(arr){
 
-        sum=sum+arr[i];
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++){
+
+//         sum=sum+arr[i];
+//     }
+//     return sum;
+// }
+
+// console.log(sumArray(arr));
+
+
+
+
+let str="i am anjana"
+
+function largestWord(sentence)
+{
+
+    let longest="";
+    let words=sentence.split(" ");
+    for(let i=0;i<words.length;i++)
+    {
+        if (words[i].length > longest.length) {
+      longest = words[i]; 
     }
-    return sum;
+
+}
+return longest;
 }
 
-console.log(sumArray(arr));
+console.log(largestWord(str));
